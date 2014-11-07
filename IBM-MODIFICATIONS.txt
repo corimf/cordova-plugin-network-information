@@ -5,3 +5,12 @@ Android L changes type from Mobile to Cellular
 - IBM PMR: (found before shipped)
 - Worklight RTC work item number:
 - Full description: Android L changes the network type from “mobile” to “cellular”, was returning “unknown” when connected to cellular network because of this issue
+
+Fix networkStatusForFlags return value type to work with 64-bit iOS
+- Cordova RTC work item number: 55592
+- Apache Cordova Jira issue: https://issues.apache.org/jira/browse/CB-6350
+- Markmail / Google Group / StackOverflow reference:
+- Extra reference: http://blog.bignerdranch.com/564-bools-sharp-corners/
+- IBM PMR: (found before shipped)
+- Worklight RTC work item number: 55901
+- Full description: When we get connection type on 64-bit iOS, return value is set to cellular even if wifi is reachable. Use "NetworkStatus" type instead of "BOOL" to resolve the issue
