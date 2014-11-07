@@ -5,3 +5,10 @@ Android L changes type from Mobile to Cellular
 - IBM PMR: (found before shipped)
 - Worklight RTC work item number:
 - Full description: Android L changes the network type from “mobile” to “cellular”, was returning “unknown” when connected to cellular network because of this issue
+
+Cordova iOS 64-bit support
+- Cordova RTC work item number: 55592
+- Worklight RTC work item number: 55901
+- Apache Cordova Jira issue: CB-6350
+- Markmail or Google Group reference: none
+- On 64-bit return value is cellular even if wifi is reachable. Use NetworkStatus type instead of BOOL to resolve the issue
